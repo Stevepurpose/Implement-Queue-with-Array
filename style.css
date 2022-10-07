@@ -295,14 +295,14 @@ button{
     #toread{
         position: relative;
         
-        left: 150px;
+        left: 50px;
         font-size:25px;
     }
 
 
     #showq{
         position: relative;
-        left: 150px;
+        left: 50px;
         
         font-size:25px;
         }
