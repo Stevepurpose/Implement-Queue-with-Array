@@ -1,0 +1,371 @@
+body{
+    justify-content: center;
+    background-color: #080800;
+    color: gold;
+}
+#toread{
+    position: relative;
+    top:140px;
+    left: 630px;
+    font-size: larger;
+}
+
+
+#toadd{
+    position:relative;
+    top:160px;
+    left: 570px;
+    text-align: center;
+    background-color: brown;
+    color: gold;
+    height: 80px;
+    font-size: larger;
+}
+header{
+    position:relative;
+    left: 400px;
+    top: 48px;
+    color: orange;
+    
+    
+    font-size: 30px;
+}
+
+.choices{
+    position:relative;
+    top:200px;
+    left: 490px;
+}
+
+#instruct{
+    position: relative;
+    top: 230px;
+    left: 350px;
+    font-size: 20px;
+}
+
+#showq{
+position: relative;
+left: 630px;
+top: 130px;
+font-size: larger;
+}
+
+
+button{
+    background-color: brown;
+    color: gold;
+    height: 50px;
+    border-radius: 20%;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+}
+
+#but4{
+    width: 80px;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        font-size: 10px;
+        
+    }
+
+    header{
+        text-align: center;
+        position: relative;
+        left: 3px;
+        font-size: 20px;
+    }
+
+
+
+    #toadd{
+        
+        position: relative;
+        left: 150px;
+    
+        text-align: center;
+        
+        
+        height: 80px;
+        font-size:20px;
+    }
+
+    .choices{
+        position:relative;
+        
+        left:65px;
+    }
+
+    #instruct{
+        position: relative;
+        
+        left: 20px;
+        font-size: 16px;
+    }
+button{
+    width:65px;
+    font-size:10px;
+    border-radius: 20%;
+    margin-right:5px;
+}
+#toread{
+    position: relative;
+    
+    left: 230px;
+    font-size:35px;
+}
+#showq{
+    position: relative;
+    left: 230px;
+    
+    font-size:35px;
+    }
+
+
+
+
+}
+
+
+
+@media screen and (max-width:550px) {
+    body{
+        font-size: 10px;
+        
+    }
+
+    header{
+        text-align: center;
+        position: relative;
+        left: 3px;
+        font-size: 20px;
+    }
+
+
+
+    #toadd{
+        
+        position: relative;
+        left: 100px;
+    
+        text-align: center;
+        
+        
+        height: 80px;
+        font-size:20px;
+    }
+
+    .choices{
+        position:relative;
+        
+        left:25px;
+    }
+    #instruct{
+        position: relative;
+        
+        left: 15px;
+        font-size: 16px;
+    }
+
+
+
+
+button{
+    width:65px;
+    font-size:10px;
+    border-radius: 20%;
+    margin-right:5px;
+}
+#toread{
+    position: relative;
+    
+    left: 200px;
+    font-size:35px;
+}
+#showq{
+    position: relative;
+    left: 200px;
+    
+    font-size:35px;
+    }
+
+
+    
+}
+
+
+
+
+
+@media screen and (max-width:496px) {
+    body{
+        font-size: 7px;
+        
+    }
+
+    header{
+        text-align: center;
+        position: relative;
+        left: 13px;
+        font-size: 20px;
+    }
+    #toadd{
+        position: relative;
+        left: 85px;
+        
+        text-align: center;
+          
+        font-size: 20px;
+    }
+    .choices{
+        position:relative;
+        
+        left:10px;
+    }
+
+
+    #instruct{
+        position: relative;
+        
+        left: 5px;
+        font-size: 14px;
+    }
+button{
+    width:65px;
+    font-size:10px;
+    border-radius: 20%;
+    margin-right:5px;
+}
+#toread{
+    position: relative;
+    
+    left: 180px;
+    font-size:30px;
+}
+#showq{
+    position: relative;
+    left: 180px;
+    
+    font-size:30px;
+    }
+
+
+
+}
+    @media screen and (max-width:416px) {
+        body{
+            font-size: 7px;
+            
+        }
+    
+        header{
+            text-align: center;
+            position: relative;
+            left: 10px;
+            font-size: 18px;
+        }
+        #toadd{
+            position: relative;
+            left: 50px;
+            
+            text-align: center;
+              
+            font-size: 20px;
+        }
+        .choices{
+            position:relative;
+            
+            left:5px;
+        }
+    button{
+        width:65px;
+        font-size:10px;
+        border-radius: 20%;
+        margin-right:5px;
+    }
+    #but4{
+        width: 50px;
+    }
+
+    #toread{
+        position: relative;
+        
+        left: 150px;
+        font-size:25px;
+    }
+
+
+    #showq{
+        position: relative;
+        left: 150px;
+        
+        font-size:25px;
+        }
+    
+    
+}
+
+
+
+@media screen and (max-width:379px) {
+    body{
+        font-size: 7px;
+        
+    }
+
+    header{
+        text-align: center;
+        position: relative;
+        left: 10px;
+        font-size: 15px;
+    }
+    #toadd{
+        position: relative;
+        left: 20px;
+        
+        text-align: center;
+          
+        font-size: 20px;
+    }
+
+    .choices{
+        position:relative;
+        
+        left:1px;
+    }
+button{
+    width:60px;
+    font-size:10px;
+    border-radius: 20%;
+    padding: 5px;
+    margin: 2px;
+}
+#but4{
+    width: 50px;
+}
+
+#but1,#but3{
+    width: 71px;
+}
+#toread{
+    position: relative;
+    
+    left: 150px;
+    font-size:19px;
+}
+
+#showq{
+    position: relative;
+    left: 150px;
+    
+    font-size:19px;
+    }
+
+
+
+}

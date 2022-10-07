@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Queue implementation using array</title>
+</head>
+<body>
+    <header>QUEUE IMPLEMENTATION USING ARRAY</header>
+   <p id="showq"></p> 
+
+<p id="toread"></p>
+
+<input type="text" id="toadd" placeholder="enter data">
+<div class="choices">
+<button id="but1">ENQUEUE</button>
+<button id="but2">DISPLAY</button>
+<button id="but3">DEQUEUE</button>
+<button id="but4">PEEK</button>
+<button id="but5">ISEMPTY</button>
+</div>
+<p id="instruct">Enter data in box and click on enqueue,click dequeue to delete as regards FIFO rules</p>
+</body>
+<script>
+var choices=document.querySelector(".choices")
+var button=document.querySelector("button")
+var toadd=document.getElementById("toadd").value
+var toread=document.getElementById("toread")
+var showq=document.getElementById("showq")
+
+class Queue{
+    constructor(){
+        this.Array=[]
+        this.front=-1
+        this.rear=-1
+    }
+}
+//instantiate
+var waiting=new Queue()
+/*enqueue code*/
+waiting.enqueue=function(toadd){
+    
+        this.Array[this.rear]=toadd     
+          this.rear+=1
+    
+}
+
+
+waiting.display=function(){
+    //to print out items in our array
+    var count;
+if(this.front==-1&&this.rear==-1){
+    toread.innerHTML='underflow condition'
+}
+
+
+showq.innerHTML="items on queue are: " +" "
+for(count=this.front;count<this.Array.length;count++){
+    
+    showq.innerHTML+=this.Array[count] +"  "
+    
+}
+
+
+}
+
+waiting.dequeue=function(){
+if(this.front==-1&&this.rear==-1){
+    toread.innerHTML="queue is empty"
+}
+else{
+    
+    this.front+=1 //increment front,now pointing to next address
+}
+}
+
+waiting.peek=function(){
+    //check if empty
+    if(this.front==-1&&this.rear==-1){
+    toread.innerHTML="queue is empty"
+}
+//otherwise
+else{
+    toread.innerHTML=this.Array[this.front] +" "+ "is data in front"
+}
+
+}
+
+waiting.IsEmpty=function(){
+    if(this.rear<0){
+        toread.innerHTML=true
+    }
+
+    else{
+        toread.innerHTML=false 
+    }
+}
+
+
+
+/*event delegation to add event and listeners*/
+
+choices.addEventListener("click",(e)=>{
+if(e.target.matches("button")){
+    var button=e.target
+    
+switch(button){
+    case but1:
+    var toadd=document.getElementById("toadd").value
+    toread.innerHTML= toadd +" "+"was added to queue"
+    waiting.enqueue(toadd)
+
+break;
+
+case but2:
+waiting.display()
+break;
+
+case but3:
+waiting.dequeue()
+break;
+
+
+case but4:
+waiting.peek()
+break;
+
+
+case but5:
+waiting.IsEmpty()
+break;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+})
+
+
+</script>
+
+
+</html>
